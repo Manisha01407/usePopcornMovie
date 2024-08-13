@@ -92,7 +92,7 @@ export default function App() {
       try {
         setisLoading(true);
         seterror('');
-        const res = await fetch(`http://www.omdbapi.com/?apikey=${Key}&s=${query}`, { signal: controller.signal });
+        const res = await fetch(`https://www.omdbapi.com/?apikey=${Key}&s=${query}`, { signal: controller.signal });
 
         if (!res.ok) throw new Error("something went wrong with fetching movie")
 
@@ -326,7 +326,7 @@ function Moviedeatils({ selectid, onclosemovie, onaddwatched, watched }) {
   useEffect(function () {
     async function getMoviedetails() {
       setisLoading(true);
-      const res = await fetch(`http://www.omdbapi.com/?apikey=${Key}&i=${selectid}`);
+      const res = await fetch(`https://www.omdbapi.com/?apikey=${Key}&i=${selectid}`);
       const data = await res.json();
       setMovie(data);
       setisLoading(false);

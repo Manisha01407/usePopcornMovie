@@ -1,18 +1,55 @@
-# Getting Started with Create React App
+# usePopcornMovie - Movie Search and Review Application
+usePopcornMovie is a React-based application that allows users to search for movies by fetching data from a movie API based on user input. Users can view movie details, add star ratings based on their reviews, and maintain a personalized list of movies.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Features
+Search movies via an API using user input.\
+Display movie details, including title, poster, release year, and synopsis.\
+Allow users to add star ratings based on personal reviews.\
+Create a list of favorite or reviewed movies.
 
-## Available Scripts
+### Getting Started
+Follow these instructions to set up the project locally.\
+Prerequisites\
+Ensure that you have the following installed on your system:\
 
-In the project directory, you can run:
+Node.js (v14 or higher)\
+React\
+npm
 
-### `npm start`
+### Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Clone the Repository\
+Clone this repository to your local machine using the following command:\
+git clone https://github.com/yourusername/usepopcornmovie.git
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Navigate to the Project Directory
+Move into the project folder:\
+cd usepopcornmovie
+
+### Install Dependencies
+Install the necessary packages by running:
+
+### npm install
+Running the Application\
+To run the application locally, follow these steps:
+
+### Start the Development Server
+This command will launch the React development environment and serve your frontend UI.\
+npm start\
+This will load the usePopcornMovie application.
+
+### Usage
+Search for Movies: Enter the movie title or keyword in the search bar, and the application will fetch matching movies from the API.\
+View Movie Details: Click on any movie from the search results to see more information such as title, release date, and overview.\
+Add Star Ratings: Based on your personal review, you can rate each movie using the star rating system.\
+Create a Movie List: Add movies to your personalized list of reviewed or favorite movies.
+
+### API Usage
+usePopcornMovie uses an external movie API to fetch movie data. You may need to acquire an API key (such as from The Movie Database (TMDb)) and add it to your environment configuration.
+
+### Scripts
+npm start: Starts the development server on http://localhost:3000/.\
+npm run build: Builds the project for production.\
 
 ### `npm test`
 
